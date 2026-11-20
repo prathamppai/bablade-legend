@@ -57,7 +57,7 @@ export default function Navigation() {
           left: 0,
           right: 0,
           zIndex: 1000,
-          padding: '1rem 2rem',
+          padding: '0.75rem 1rem',
           display: 'flex',
           alignItems: 'center',
           justifyContent: 'space-between',
@@ -78,11 +78,11 @@ export default function Navigation() {
           style={{
             display: 'flex',
             alignItems: 'center',
-            gap: '0.75rem',
+            gap: '0.5rem',
             textDecoration: 'none',
             color: 'white',
             fontFamily: 'var(--font-display)',
-            fontSize: '1.5rem',
+            fontSize: 'clamp(1.125rem, 2.5vw, 1.5rem)',
             fontWeight: 700,
             letterSpacing: '-0.04em',
           }}
@@ -97,7 +97,7 @@ export default function Navigation() {
             BABLADÉ
           </span>
           <span style={{
-            fontSize: '0.75rem',
+            fontSize: 'clamp(0.625rem, 1.2vw, 0.75rem)',
             fontWeight: 500,
             color: '#00d4ff',
             letterSpacing: '0.1em',
@@ -113,7 +113,7 @@ export default function Navigation() {
           style={{
             display: 'flex',
             alignItems: 'center',
-            gap: '2.5rem',
+            gap: 'clamp(1rem, 2vw, 2.5rem)',
             listStyle: 'none',
             margin: 0,
             padding: 0,
@@ -129,12 +129,12 @@ export default function Navigation() {
                 style={{
                   color: '#b8b8d0',
                   textDecoration: 'none',
-                  fontSize: '0.875rem',
+                  fontSize: 'clamp(0.75rem, 1.5vw, 0.875rem)',
                   fontWeight: 500,
                   letterSpacing: '0.02em',
                   textTransform: 'uppercase',
                   position: 'relative',
-                  padding: '0.5rem 0',
+                  padding: '0.375rem 0',
                   transition: 'color 0.2s ease',
                 }}
                 onMouseEnter={(e) => e.target.style.color = '#ffffff'}
@@ -165,7 +165,7 @@ export default function Navigation() {
           style={{
             display: 'flex',
             alignItems: 'center',
-            gap: '1rem',
+            gap: '0.75rem',
           }}
           role="navigation"
           aria-label="Social links"
@@ -182,8 +182,8 @@ export default function Navigation() {
                 display: 'flex',
                 alignItems: 'center',
                 justifyContent: 'center',
-                width: '40px',
-                height: '40px',
+                width: '36px',
+                height: '36px',
                 borderRadius: '50%',
                 background: 'rgba(255, 255, 255, 0.03)',
                 border: '1px solid rgba(139, 92, 246, 0.2)',
@@ -203,7 +203,7 @@ export default function Navigation() {
                 e.currentTarget.style.transform = 'translateY(0)'
               }}
             >
-              <social.icon size={20} />
+              <social.icon size={18} />
             </a>
           ))}
         </div>
@@ -225,6 +225,7 @@ export default function Navigation() {
             background: 'transparent',
             color: 'white',
             cursor: 'pointer',
+            touchAction: 'manipulation',
           }}
         >
           {isOpen ? <CloseIcon size={24} /> : <MenuIcon size={24} />}
@@ -283,7 +284,7 @@ export default function Navigation() {
             display: 'flex',
             alignItems: 'center',
             justifyContent: 'space-between',
-            padding: '1.5rem 2rem',
+            padding: '1rem 1.5rem',
             borderBottom: '1px solid rgba(139, 92, 246, 0.2)',
           }}
           onClick={(e) => e.stopPropagation()}
@@ -294,11 +295,11 @@ export default function Navigation() {
             style={{
               display: 'flex',
               alignItems: 'center',
-              gap: '0.75rem',
+              gap: '0.5rem',
               textDecoration: 'none',
               color: 'white',
               fontFamily: 'var(--font-display)',
-              fontSize: '1.5rem',
+              fontSize: 'clamp(1.125rem, 2.5vw, 1.5rem)',
               fontWeight: 700,
               letterSpacing: '-0.04em',
             }}
@@ -313,7 +314,7 @@ export default function Navigation() {
               BABLADÉ
             </span>
             <span style={{
-              fontSize: '0.75rem',
+              fontSize: 'clamp(0.625rem, 1.2vw, 0.75rem)',
               fontWeight: 500,
               color: '#00d4ff',
               letterSpacing: '0.1em',
@@ -335,6 +336,7 @@ export default function Navigation() {
               background: 'transparent',
               color: 'white',
               cursor: 'pointer',
+              touchAction: 'manipulation',
             }}
           >
             <CloseIcon size={24} />
@@ -346,7 +348,7 @@ export default function Navigation() {
             flex: 1,
             display: 'flex',
             flexDirection: 'column',
-            padding: '2rem',
+            padding: '1.5rem',
             overflowY: 'auto',
           }}
           onClick={(e) => e.stopPropagation()}
@@ -359,7 +361,7 @@ export default function Navigation() {
               padding: 0,
               display: 'flex',
               flexDirection: 'column',
-              gap: '0.5rem',
+              gap: '0.375rem',
             }}
             role="menubar"
           >
@@ -372,10 +374,10 @@ export default function Navigation() {
                   className="mobile-nav-link"
                   style={{
                     display: 'block',
-                    padding: '1rem 1.5rem',
+                    padding: '0.875rem 1.25rem',
                     color: '#b8b8d0',
                     textDecoration: 'none',
-                    fontSize: '1.125rem',
+                    fontSize: '1rem',
                     fontWeight: 500,
                     letterSpacing: '0.02em',
                     textTransform: 'uppercase',
@@ -383,6 +385,7 @@ export default function Navigation() {
                     background: 'rgba(255, 255, 255, 0.02)',
                     border: '1px solid transparent',
                     transition: 'all 0.2s ease',
+                    touchAction: 'manipulation',
                   }}
                   onMouseEnter={(e) => {
                     e.target.style.color = '#ffffff'
@@ -404,11 +407,11 @@ export default function Navigation() {
           <div
             className="mobile-nav-social"
             style={{
-              marginTop: '2rem',
-              paddingTop: '2rem',
+              marginTop: '1.5rem',
+              paddingTop: '1.5rem',
               borderTop: '1px solid rgba(139, 92, 246, 0.2)',
               display: 'flex',
-              gap: '1rem',
+              gap: '0.875rem',
               justifyContent: 'center',
               flexWrap: 'wrap',
             }}
@@ -428,13 +431,14 @@ export default function Navigation() {
                   display: 'flex',
                   alignItems: 'center',
                   justifyContent: 'center',
-                  width: '52px',
-                  height: '52px',
+                  width: '48px',
+                  height: '48px',
                   borderRadius: '50%',
                   background: 'rgba(255, 255, 255, 0.03)',
                   border: '1px solid rgba(139, 92, 246, 0.2)',
                   color: '#b8b8d0',
                   transition: 'all 0.3s cubic-bezier(0.4, 0, 0.2, 1)',
+                  touchAction: 'manipulation',
                 }}
                 onMouseEnter={(e) => {
                   e.currentTarget.style.background = 'rgba(139, 92, 246, 0.2)'
@@ -449,7 +453,7 @@ export default function Navigation() {
                   e.currentTarget.style.transform = 'translateY(0)'
                 }}
               >
-                <social.icon size={24} />
+                <social.icon size={22} />
               </a>
             ))}
           </div>

@@ -153,7 +153,8 @@
 
   /* ===== Container ===== */
   --container-max: 1280px;
-  --container-padding: var(--space-6);
+  --container-padding: var(--space-4);
+  --container-padding-md: var(--space-6);
   --container-padding-lg: var(--space-10);
 
   /* ===== Grid ===== */

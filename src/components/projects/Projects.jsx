@@ -142,8 +142,9 @@ export default function Projects() {
             style={{
               display: 'flex',
               flexWrap: 'wrap',
-              gap: '2rem',
-              padding: '1.5rem 2rem',
+              justifyContent: 'center',
+              gap: '1.5rem',
+              padding: '1.25rem 1.5rem',
               background: 'var(--gradient-card)',
               border: '1px solid var(--border-subtle)',
               borderRadius: '16px',
@@ -152,25 +153,26 @@ export default function Projects() {
             <div className="stat-item" style={{ display: 'flex', alignItems: 'center', gap: '0.75rem' }}>
               <div
                 style={{
-                  width: '44px',
-                  height: '44px',
-                  borderRadius: '12px',
+                  width: '40px',
+                  height: '40px',
+                  borderRadius: '10px',
                   background: 'rgba(0, 212, 255, 0.15)',
                   border: '1px solid rgba(0, 212, 255, 0.3)',
                   display: 'flex',
                   alignItems: 'center',
                   justifyContent: 'center',
                   color: '#00d4ff',
+                  flexShrink: 0,
                 }}
               >
-                <GitHubIcon size={20} />
+                <GitHubIcon size={18} />
               </div>
               <div>
                 <span
                   style={{
                     display: 'block',
                     fontFamily: 'var(--font-display)',
-                    fontSize: '1.75rem',
+                    fontSize: 'clamp(1.5rem, 3vw, 1.75rem)',
                     fontWeight: 700,
                     color: 'white',
                     lineHeight: 1,
@@ -182,7 +184,7 @@ export default function Projects() {
                   style={{
                     display: 'block',
                     fontFamily: 'var(--font-mono)',
-                    fontSize: '0.75rem',
+                    fontSize: '0.6875rem',
                     color: '#8a8a9e',
                     textTransform: 'uppercase',
                     letterSpacing: '0.08em',
@@ -193,30 +195,31 @@ export default function Projects() {
               </div>
             </div>
 
-            <div className="stat-divider" style={{ width: '1px', height: '40px', background: 'var(--border-subtle)', flexShrink: 0 }} />
+            <div className="stat-divider" style={{ width: '1px', height: '36px', background: 'var(--border-subtle)', flexShrink: 0 }} />
 
             <div className="stat-item" style={{ display: 'flex', alignItems: 'center', gap: '0.75rem' }}>
               <div
                 style={{
-                  width: '44px',
-                  height: '44px',
-                  borderRadius: '12px',
+                  width: '40px',
+                  height: '40px',
+                  borderRadius: '10px',
                   background: 'rgba(139, 92, 246, 0.15)',
                   border: '1px solid rgba(139, 92, 246, 0.3)',
                   display: 'flex',
                   alignItems: 'center',
                   justifyContent: 'center',
                   color: '#8b5cf6',
+                  flexShrink: 0,
                 }}
               >
-                <CodeIcon size={20} />
+                <CodeIcon size={18} />
               </div>
               <div>
                 <span
                   style={{
                     display: 'block',
                     fontFamily: 'var(--font-display)',
-                    fontSize: '1.75rem',
+                    fontSize: 'clamp(1.5rem, 3vw, 1.75rem)',
                     fontWeight: 700,
                     color: 'white',
                     lineHeight: 1,
@@ -228,7 +231,7 @@ export default function Projects() {
                   style={{
                     display: 'block',
                     fontFamily: 'var(--font-mono)',
-                    fontSize: '0.75rem',
+                    fontSize: '0.6875rem',
                     color: '#8a8a9e',
                     textTransform: 'uppercase',
                     letterSpacing: '0.08em',
@@ -239,30 +242,31 @@ export default function Projects() {
               </div>
             </div>
 
-            <div className="stat-divider" style={{ width: '1px', height: '40px', background: 'var(--border-subtle)', flexShrink: 0 }} />
+            <div className="stat-divider" style={{ width: '1px', height: '36px', background: 'var(--border-subtle)', flexShrink: 0 }} />
 
             <div className="stat-item" style={{ display: 'flex', alignItems: 'center', gap: '0.75rem' }}>
               <div
                 style={{
-                  width: '44px',
-                  height: '44px',
-                  borderRadius: '12px',
+                  width: '40px',
+                  height: '40px',
+                  borderRadius: '10px',
                   background: 'rgba(251, 191, 36, 0.15)',
                   border: '1px solid rgba(251, 191, 36, 0.3)',
                   display: 'flex',
                   alignItems: 'center',
                   justifyContent: 'center',
                   color: '#fbbf24',
+                  flexShrink: 0,
                 }}
               >
-                <SparklesIcon size={20} />
+                <SparklesIcon size={18} />
               </div>
               <div>
                 <span
                   style={{
                     display: 'block',
                     fontFamily: 'var(--font-display)',
-                    fontSize: '1.75rem',
+                    fontSize: 'clamp(1.5rem, 3vw, 1.75rem)',
                     fontWeight: 700,
                     color: 'white',
                     lineHeight: 1,
@@ -274,7 +278,7 @@ export default function Projects() {
                   style={{
                     display: 'block',
                     fontFamily: 'var(--font-mono)',
-                    fontSize: '0.75rem',
+                    fontSize: '0.6875rem',
                     color: '#8a8a9e',
                     textTransform: 'uppercase',
                     letterSpacing: '0.08em',

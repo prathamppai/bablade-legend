@@ -72,8 +72,8 @@ function SocialCard({ link, index }) {
         style={{
           display: 'flex',
           alignItems: 'center',
-          gap: '1.5rem',
-          padding: '1.5rem 2rem',
+          gap: '1rem',
+          padding: '1.25rem 1.5rem',
           background: 'var(--gradient-card)',
           border: `1px solid ${link.borderColor}`,
           borderRadius: '16px',
@@ -82,6 +82,7 @@ function SocialCard({ link, index }) {
           transition: 'all 0.4s cubic-bezier(0.4, 0, 0.2, 1)',
           position: 'relative',
           overflow: 'hidden',
+          touchAction: 'manipulation',
         }}
         onMouseEnter={(e) => {
           e.currentTarget.style.borderColor = link.color
@@ -112,9 +113,9 @@ function SocialCard({ link, index }) {
             display: 'flex',
             alignItems: 'center',
             justifyContent: 'center',
-            width: '56px',
-            height: '56px',
-            borderRadius: '16px',
+            width: '48px',
+            height: '48px',
+            borderRadius: '12px',
             background: link.bgColor,
             border: `1px solid ${link.borderColor}`,
             color: link.color,
@@ -122,7 +123,7 @@ function SocialCard({ link, index }) {
             transition: 'all 0.3s ease',
           }}
         >
-          <link.icon size={28} />
+          <link.icon size={24} />
         </div>
 
         {/* Info */}
@@ -133,7 +134,7 @@ function SocialCard({ link, index }) {
               display: 'flex',
               alignItems: 'center',
               justifyContent: 'space-between',
-              gap: '1rem',
+              gap: '0.75rem',
               marginBottom: '0.25rem',
             }}
           >
@@ -141,7 +142,7 @@ function SocialCard({ link, index }) {
               className="social-label"
               style={{
                 fontFamily: 'var(--font-display)',
-                fontSize: '1.125rem',
+                fontSize: '1rem',
                 fontWeight: 600,
                 color: 'white',
                 margin: 0,
@@ -150,14 +151,14 @@ function SocialCard({ link, index }) {
             >
               {link.label}
             </h3>
-            <ExternalLinkIcon size={16} style={{ color: '#8a8a9e', opacity: 0, transition: 'opacity 0.2s ease' }} />
+            <ExternalLinkIcon size={14} style={{ color: '#8a8a9e', opacity: 0, transition: 'opacity 0.2s ease' }} />
           </div>
           <span
             className="social-username"
             style={{
               display: 'block',
               fontFamily: 'var(--font-mono)',
-              fontSize: '0.875rem',
+              fontSize: '0.8125rem',
               color: link.color,
               marginBottom: '0.25rem',
             }}
@@ -168,7 +169,7 @@ function SocialCard({ link, index }) {
             className="social-description"
             style={{
               fontFamily: 'var(--font-body)',
-              fontSize: '0.875rem',
+              fontSize: '0.8125rem',
               lineHeight: 1.5,
               color: '#8a8a9e',
               margin: 0,

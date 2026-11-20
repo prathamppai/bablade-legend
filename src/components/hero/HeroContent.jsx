@@ -28,11 +28,12 @@ export default function HeroContent() {
         width: '100%',
         maxWidth: '1280px',
         margin: '0 auto',
-        padding: '0 2rem',
+        padding: '0 1rem',
         display: 'flex',
         flexDirection: 'column',
         alignItems: 'flex-start',
         minHeight: '100vh',
+        minHeight: '100dvh',
         justifyContent: 'center',
       }}
     >

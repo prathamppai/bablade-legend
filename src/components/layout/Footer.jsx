@@ -14,7 +14,7 @@ export default function Footer() {
       className="site-footer"
       role="contentinfo"
       style={{
-        padding: '4rem 2rem 2rem',
+        padding: '3rem 1rem 1.5rem',
         background: 'var(--bg-secondary)',
         borderTop: '1px solid var(--border-subtle)',
       }}
@@ -26,7 +26,7 @@ export default function Footer() {
           margin: '0 auto',
           display: 'flex',
           flexDirection: 'column',
-          gap: '3rem',
+          gap: '2rem',
         }}
       >
         {/* Brand & Tagline */}
@@ -42,11 +42,11 @@ export default function Footer() {
             style={{
               display: 'inline-flex',
               alignItems: 'center',
-              gap: '0.75rem',
+              gap: '0.5rem',
               textDecoration: 'none',
               color: 'white',
               fontFamily: 'var(--font-display)',
-              fontSize: '1.75rem',
+              fontSize: 'clamp(1.25rem, 3vw, 1.75rem)',
               fontWeight: 700,
               letterSpacing: '-0.04em',
             }}
@@ -60,7 +60,7 @@ export default function Footer() {
               BABLADÉ
             </span>
             <span style={{
-              fontSize: '0.875rem',
+              fontSize: 'clamp(0.75rem, 1.5vw, 0.875rem)',
               fontWeight: 500,
               color: '#00d4ff',
               letterSpacing: '0.1em',
@@ -72,9 +72,9 @@ export default function Footer() {
           <p
             className="footer-tagline"
             style={{
-              marginTop: '1rem',
+              marginTop: '0.75rem',
               color: 'var(--text-secondary)',
-              fontSize: '1rem',
+              fontSize: 'clamp(0.875rem, 2vw, 1rem)',
               fontWeight: 400,
               maxWidth: '400px',
               marginLeft: 'auto',
@@ -92,7 +92,7 @@ export default function Footer() {
           style={{
             display: 'flex',
             justifyContent: 'center',
-            gap: '1rem',
+            gap: '0.75rem',
             flexWrap: 'wrap',
           }}
         >
@@ -108,13 +108,14 @@ export default function Footer() {
                 display: 'flex',
                 alignItems: 'center',
                 justifyContent: 'center',
-                width: '48px',
-                height: '48px',
+                width: '44px',
+                height: '44px',
                 borderRadius: '50%',
                 background: 'rgba(255, 255, 255, 0.03)',
                 border: '1px solid var(--border-subtle)',
                 color: 'var(--text-tertiary)',
                 transition: 'all 0.3s cubic-bezier(0.4, 0, 0.2, 1)',
+                touchAction: 'manipulation',
               }}
               onMouseEnter={(e) => {
                 e.currentTarget.style.background = 'rgba(139, 92, 246, 0.15)'
@@ -131,7 +132,7 @@ export default function Footer() {
                 e.currentTarget.style.boxShadow = 'none'
               }}
             >
-              <social.icon size={22} />
+              <social.icon size={20} />
             </a>
           ))}
         </nav>

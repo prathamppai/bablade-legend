@@ -15,8 +15,8 @@ export default function ProjectGrid({ repos, featuredCount = 6 }) {
           className="grid"
           style={{
             display: 'grid',
-            gridTemplateColumns: 'repeat(auto-fill, minmax(340px, 1fr))',
-            gap: '1.5rem',
+            gridTemplateColumns: 'repeat(auto-fill, minmax(280px, 1fr))',
+            gap: '1rem',
           }}
         >
           {featuredRepos.map((repo, index) => (

@@ -27,10 +27,10 @@ export default function Contact() {
           flexDirection: 'column',
           alignItems: 'center',
           textAlign: 'center',
-          gap: '3rem',
+          gap: '2.5rem',
           maxWidth: '800px',
           margin: '0 auto',
-          padding: '0 2rem',
+          padding: '0 1rem',
         }}
       >
         {/* Main Quote */}

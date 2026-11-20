@@ -65,8 +65,8 @@ export default function About() {
           className="about-grid"
           style={{
             display: 'grid',
-            gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))',
-            gap: '1.5rem',
+            gridTemplateColumns: 'repeat(auto-fit, minmax(260px, 1fr))',
+            gap: '1rem',
           }}
         >
           {ABOUT_CONTENT.interests.map((interest, index) => (
