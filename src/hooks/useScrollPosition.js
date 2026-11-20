@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
 
 /**
  * Hook to track scroll position (Y offset)
@@ -61,6 +61,7 @@ export function useScrollThreshold(threshold = 100) {
   const scrollY = useScrollPosition()
 
   useEffect(() => {
+    // eslint-disable-next-line react-hooks/set-state-in-effect
     setHasScrolledPast(scrollY > threshold)
   }, [scrollY, threshold])
 

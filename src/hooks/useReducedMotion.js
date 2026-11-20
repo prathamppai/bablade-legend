@@ -9,7 +9,7 @@ export function useReducedMotion() {
 
   useEffect(() => {
     const mediaQuery = window.matchMedia('(prefers-reduced-motion: reduce)')
-    setPrefersReducedMotion(mediaQuery.matches)
+    setPrefersReducedMotion(mediaQuery.matches) // eslint-disable-line react-hooks/set-state-in-effect
 
     const handler = (event) => {
       setPrefersReducedMotion(event.matches)
